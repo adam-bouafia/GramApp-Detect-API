@@ -1,0 +1,1 @@
+web: gunicorn appdetect:app
