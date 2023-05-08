@@ -10,7 +10,7 @@ def detect_language():
     if detected_lang in ['ar', 'fr', 'en']:
         return jsonify({'language': detected_lang})
     else:
-        return jsonify({'error': 'Language not supported'})
+        return jsonify({'error': 'Language not detected or not supported'})
 
 if __name__ == '__main__':
     app.run()
